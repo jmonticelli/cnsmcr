@@ -6,7 +6,7 @@ Consume a requested amount of your CPU cycles on an arbitrary processor core.
 
 This is done simply by doing some busy work, and sleeping for whatever portion of a fraction of a second remains (if there is any remainder of CPU usage specified by the user)
 
-Build by simply running `make` and run the built executable `sudo nice --20 ./cnsmcr <0.1 - 100.0>`
+Build by simply running `make` and run the built executable `sudo nice --1 ./cnsmcr <0.1 - 100.0>`
 
 
 ### Q. Why would I want to consume a CPU core?
