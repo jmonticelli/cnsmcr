@@ -1,6 +1,6 @@
 # cnsmcr
 
-**cnsmcr** (**c**on**s**u**m**e **c**o**r**e) is a program that has only one goal:
+**cnsmcr** (**c**o**ns**u**m**e **c**o**r**e) is a program that has only one goal:
 
 Consume a requested amount of your CPU cycles on an arbitrary processor core.
 
