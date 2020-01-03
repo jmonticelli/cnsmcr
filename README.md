@@ -16,7 +16,7 @@ A. To provide the hottest way to handicap your CPU to emulate less-powerful hard
 A. I'm sure there are. But this is cheap, easy, and reliable.
 
 ### Q. Why doesn't it report my jennies?
-A. Printing at all during this more or less breaks the accuracy of the target CPU consumption and makes it harder to track this process being run, as the process may hop across multiple CPUs while it waits the blocking call to print to the screen. This could, however, be printed at the end when the application is killed. (tldr I'm lazy)
+A. Printing at all during this more or less breaks the accuracy of the target CPU consumption and makes it harder to track this process being run, as the process may hop across multiple CPUs while it awaits the blocking call to print to the screen to return. This could, however, be printed at the end when the application is killed. (tldr I'm lazy)
 
 ### Q. Why is this actually not taking up all of my CPU on one core (or the specified amount)?
 A. Probably because you have not appropriately niced this process. This process is intended to be run with the highest priority (-20).
