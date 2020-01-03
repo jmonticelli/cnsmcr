@@ -62,8 +62,6 @@ int main(int argc, char **argv)
     auto const max_duration = std::chrono::microseconds(
             static_cast<size_t>(unscaled_consumption_ratio * 1000.0 * 1000.0));
 
-    std::cout << "max_duration = " << max_duration.count() << "microseconds" << std::endl;
-
     auto last_start = std::chrono::steady_clock::now();
     size_t a_number_to_increment = 0u;
     size_t number_of_jennies = 0u;
