@@ -22,7 +22,7 @@ int exit_with_help()
         "                / __| '_ \\/ __| '_ ` _ \\ / __| '__|\n"
         "               | (__| | | \\__ \\ | | | | | (__| |\n"
         "                \\___|_| |_|___/_| |_| |_|\\___|_|\n\n"
-        "                   (C) 2019 Julian Monticelli\n"
+        "                   (C) 2020 Julian Monticelli\n"
         "\n"
         "cnsmcr requires a CPU percentage approximation (0.1-100%) in order to run.\n"
         "Remember to nice the process for best results.";
@@ -77,7 +77,7 @@ int main(int argc, char **argv)
             a_number_to_increment = 0u;
         }
 
-        const auto ran_for_s = (std::chrono::steady_clock::now() - last_start);
+        auto const ran_for_s = (std::chrono::steady_clock::now() - last_start);
 
         if (ran_for_s >= max_duration && unscaled_consumption_ratio < 100.0f)
         {
